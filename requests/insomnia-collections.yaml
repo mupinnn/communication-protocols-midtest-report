@@ -1,0 +1,260 @@
+type: collection.insomnia.rest/5.0
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1764736330159
+  modified: 1764736330159
+  description: ""
+collection:
+  - name: UTS Comp2
+    meta:
+      id: fld_af3ffbf6f622435aaa74c618c04af106
+      created: 1781103120710
+      modified: 1781103128702
+      sortKey: -1781103120710
+      description: ""
+    children:
+      - url: http://localhost:8088/api/profiles
+        name: List profiles
+        meta:
+          id: req_0eeb1f0a81be4961bc5be3ea9a93f4bd
+          created: 1781103130572
+          modified: 1781103184802
+          isPrivate: false
+          description: ""
+          sortKey: -1781103130572
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8088/api/profiles/1
+        name: Detail profile
+        meta:
+          id: req_4009407f08894f2a969f455312ecd1f0
+          created: 1781103558190
+          modified: 1781103570620
+          isPrivate: false
+          description: ""
+          sortKey: -1781103558190
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8088/api/profiles
+        name: Create profile
+        meta:
+          id: req_9e5e2db205eb44dfab2cba103e0ee16b
+          created: 1781103579653
+          modified: 1781103685579
+          isPrivate: false
+          description: ""
+          sortKey: -1781103579653
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "userId": 3,
+              "fullName": "Jim Geovedi",
+              "program": "Cyber Security",
+              "semester": 6,
+              "skills": [
+                "insomnia",
+                "curl",
+                "wireshark"
+              ],
+              "city": "Bandung"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8088/api/profiles/3
+        name: Update profile
+        meta:
+          id: req_8c41394ae34f402f9735a9a7526ab494
+          created: 1781103712339
+          modified: 1781103751251
+          isPrivate: false
+          description: ""
+          sortKey: -1781103712339
+        method: PATCH
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "semester": 4
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8088/api/profiles/3
+        name: Update profile (ALL)
+        meta:
+          id: req_a4aa7806690b481d937ad6a1e1396ff3
+          created: 1781103769813
+          modified: 1781103827120
+          isPrivate: false
+          description: ""
+          sortKey: -1781103769813
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "userId": 3,
+              "fullName": "Jim Geovedi",
+              "program": "Cyber Security",
+              "semester": 2,
+              "skills": [
+                "insomnia",
+                "curl",
+                "wireshark"
+              ],
+              "city": "Jakarta"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8088/api/profiles/5
+        name: Delete profile
+        meta:
+          id: req_7e05a8c0ffd5469390243e1fdf72def5
+          created: 1781103846017
+          modified: 1781103873341
+          isPrivate: false
+          description: ""
+          sortKey: -1781103846017
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/11.6.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8088/api/profiles
+        name: Create profile
+        meta:
+          id: req_511bc71259ca49258aed9599b1c0d369
+          created: 1781104994079
+          modified: 1781105053364
+          isPrivate: false
+          description: ""
+          sortKey: -1781103645996
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+              "userId": 4,
+              "fullName": "Linus Torvalds",
+              "program": "Operating System",
+              "semester": 2,
+              "skills": [
+                "linux",
+                "git",
+                "open source"
+              ],
+              "city": "Helsinki"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/11.6.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1764736340414
+    modified: 1773846560376
+  cookies:
+    - key: refresh_token
+      value: amkD5W_gOfkpEbDhANHukg
+      maxAge: 604800
+      domain: localhost
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2026-02-22T13:57:52.357Z
+      lastAccessed: 2026-03-18T15:09:20.376Z
+      sameSite: lax
+      id: f42cbaee-9e83-4667-9949-3bf8c0bd7176
+    - key: access_token
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0ODlhZTI2Zi0xMzMzLTQ1YjUtODE5Zi1mYTNlOWM3Nzk0NzYiLCJleHAiOjE3NzM4NDY2MjB9.pCnwX9PuU66sfYQwW9w4mmlUo28art6jTT1YNjkzqGM
+      maxAge: 60
+      domain: localhost
+      path: /
+      secure: true
+      httpOnly: true
+      hostOnly: true
+      creation: 2026-03-18T15:09:20.374Z
+      lastAccessed: 2026-03-18T15:09:20.374Z
+      sameSite: lax
+      id: 1d0dde94-1e28-4e37-89a4-9281f0ee6dd5
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1764736340246
+    modified: 1764736340246
+    isPrivate: false
